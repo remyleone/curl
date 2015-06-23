@@ -96,6 +96,7 @@ bool curl_win32_idn_to_ascii(const char *in, char **out);
 
 /* And now for the protocols */
 #include "ftp.h"
+#include "coap.h"
 #include "dict.h"
 #include "telnet.h"
 #include "tftp.h"
@@ -167,6 +168,10 @@ static const struct Curl_handler * const protocols[] = {
 
 #ifndef CURL_DISABLE_DICT
   &Curl_handler_dict,
+#endif
+
+#ifndef CURL_DISABLE_COAP
+  &Curl_handler_coap,
 #endif
 
 #ifndef CURL_DISABLE_LDAP

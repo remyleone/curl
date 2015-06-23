@@ -236,6 +236,9 @@ static const char * const protocols[] = {
 #ifndef CURL_DISABLE_FTP
   "ftp",
 #endif
+#ifndef CURL_DISABLE_COAP
+  "coap",
+#endif
 #if defined(USE_SSL) && !defined(CURL_DISABLE_FTP)
   "ftps",
 #endif

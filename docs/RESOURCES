@@ -82,4 +82,6 @@ This document lists documents and standards used by curl.
 
   RFC 4954 - SMTP Authentication
 
+  RFC 7252 - The Constrained Application Protocol (CoAP)
+
   RFC 7932 - Brotli Compressed Data Format

@@ -38,6 +38,9 @@
 /* to disable cryptographic authentication */
 /* #undef CURL_DISABLE_CRYPTO_AUTH */
 
+/* to disable COAP */
+/* #undef CURL_DISABLE_COAP */
+
 /* to disable DICT */
 /* #undef CURL_DISABLE_DICT */
 

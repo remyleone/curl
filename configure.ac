@@ -523,6 +523,21 @@ AC_HELP_STRING([--disable-dict],[Disable DICT support]),
   esac ],
        AC_MSG_RESULT(yes)
 )
+AC_MSG_CHECKING([whether to support coap])
+AC_ARG_ENABLE(coap,
+AC_HELP_STRING([--enable-coap],[Enable COAP support])
+AC_HELP_STRING([--disable-coap],[Disable COAP support]),
+[ case "$enableval" in
+  no)
+       AC_MSG_RESULT(no)
+       AC_DEFINE(CURL_DISABLE_COAP, 1, [to disable COAP])
+       AC_SUBST(CURL_DISABLE_COAP, [1])
+       ;;
+  *)   AC_MSG_RESULT(yes)
+       ;;
+  esac ],
+       AC_MSG_RESULT(yes)
+)
 AC_MSG_CHECKING([whether to support telnet])
 AC_ARG_ENABLE(telnet,
 AC_HELP_STRING([--enable-telnet],[Enable TELNET support])
@@ -4295,6 +4310,9 @@ if test "x$CURL_DISABLE_LDAP" != "x1"; then
 fi
 if test "x$CURL_DISABLE_DICT" != "x1"; then
   SUPPORT_PROTOCOLS="$SUPPORT_PROTOCOLS DICT"
+fi
+if test "x$CURL_DISABLE_COAP" != "x1"; then
+  SUPPORT_PROTOCOLS="$SUPPORT_PROTOCOLS COAP"
 fi
 if test "x$CURL_DISABLE_TFTP" != "x1"; then
   SUPPORT_PROTOCOLS="$SUPPORT_PROTOCOLS TFTP"

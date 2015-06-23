@@ -32,6 +32,7 @@
 #define PORT_HTTP 80
 #define PORT_HTTPS 443
 #define PORT_DICT 2628
+#define PORT_COAP 5683
 #define PORT_LDAP 389
 #define PORT_LDAPS 636
 #define PORT_TFTP 69
@@ -118,6 +119,7 @@ typedef ssize_t (Curl_recv)(struct connectdata *conn, /* connection data */
                             CURLcode *err);           /* error to return */
 
 #include "mime.h"
+#include "coap.h"
 #include "imap.h"
 #include "pop3.h"
 #include "smtp.h"

@@ -180,6 +180,7 @@ writedelay: [secs] delay this amount between reply packets (each packet being
 <server>
 What server(s) this test case requires/uses:
 
+coap
 file
 ftp
 ftp-ipv6

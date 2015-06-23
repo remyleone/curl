@@ -18,6 +18,9 @@
 /* to disable cryptographic authentication */
 #cmakedefine CURL_DISABLE_CRYPTO_AUTH 1
 
+/* to disable COAP */
+#cmakedefine CURL_DISABLE_COAP 1
+
 /* to disable DICT */
 #cmakedefine CURL_DISABLE_DICT 1
 

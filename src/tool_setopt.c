@@ -137,6 +137,7 @@ const NameValue setopt_nv_CURL_NETRC[] = {
  * tool_libinfo.c and tool_paramhlp.c */
 const NameValue setopt_nv_CURLPROTO[] = {
   NV(CURLPROTO_ALL),            /* combination */
+  NV(CURLPROTO_COAP),
   NV(CURLPROTO_DICT),
   NV(CURLPROTO_FILE),
   NV(CURLPROTO_FTP),

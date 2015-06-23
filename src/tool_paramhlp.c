@@ -286,6 +286,7 @@ long proto2num(struct OperationConfig *config, long *val, const char *str)
     { "telnet", CURLPROTO_TELNET },
     { "ldap", CURLPROTO_LDAP },
     { "ldaps", CURLPROTO_LDAPS },
+    { "coap", CURLPROTO_COAP },
     { "dict", CURLPROTO_DICT },
     { "file", CURLPROTO_FILE },
     { "tftp", CURLPROTO_TFTP },

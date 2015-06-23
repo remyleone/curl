@@ -50,6 +50,7 @@ CURLcode get_libcurl_info(void)
     const char *proto_name;
     long        proto_pattern;
   } const possibly_built_in[] = {
+    { "coap",   CURLPROTO_COAP   },
     { "dict",   CURLPROTO_DICT   },
     { "file",   CURLPROTO_FILE   },
     { "ftp",    CURLPROTO_FTP    },

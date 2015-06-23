@@ -166,6 +166,9 @@
 #  ifndef CURL_DISABLE_DICT
 #    define CURL_DISABLE_DICT
 #  endif
+#  ifndef CURL_DISABLE_COAP
+#    define CURL_DISABLE_COAP
+#  endif
 #  ifndef CURL_DISABLE_FILE
 #    define CURL_DISABLE_FILE
 #  endif
